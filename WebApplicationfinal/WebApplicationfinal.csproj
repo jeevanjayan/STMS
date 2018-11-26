@@ -64,6 +64,7 @@
     <Content Include="deptteam.aspx" />
     <Content Include="details.aspx" />
     <Content Include="images\baseball.jpg" />
+    <Content Include="login.aspx" />
     <Content Include="shoplogin.aspx" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
@@ -74,7 +75,10 @@
     <Content Include="Teamdetails.aspx" />
     <Content Include="Teamplayers.aspx" />
     <Content Include="teamregs.aspx" />
+    <Content Include="temApprov.aspx" />
     <Content Include="torApprov.aspx" />
+    <Content Include="TorHome.aspx" />
+    <Content Include="torView.aspx" />
     <Content Include="Tournament.aspx" />
     <Content Include="tournamentowner.aspx" />
     <Content Include="trmntreg.aspx" />
@@ -126,6 +130,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PublicMaster.Master.cs">
       <DependentUpon>PublicMaster.Master</DependentUpon>
@@ -152,9 +163,15 @@
       <DependentUpon>Teamdetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Teamdetails.aspx.designer.cs">
+      <DependentUpon>Teamdetails.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Teamplayers.aspx.cs">
       <DependentUpon>Teamplayers.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teamplayers.aspx.designer.cs">
+      <DependentUpon>Teamplayers.aspx</DependentUpon>
     </Compile>
     <Compile Include="teamregs.aspx.cs">
       <DependentUpon>teamregs.aspx</DependentUpon>
@@ -163,12 +180,40 @@
     <Compile Include="teamregs.aspx.designer.cs">
       <DependentUpon>teamregs.aspx</DependentUpon>
     </Compile>
+    <Compile Include="temApprov.aspx.cs">
+      <DependentUpon>temApprov.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="temApprov.aspx.designer.cs">
+      <DependentUpon>temApprov.aspx</DependentUpon>
+    </Compile>
     <Compile Include="torApprov.aspx.cs">
       <DependentUpon>torApprov.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="torApprov.aspx.designer.cs">
       <DependentUpon>torApprov.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TorHome.aspx.cs">
+      <DependentUpon>TorHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TorHome.aspx.designer.cs">
+      <DependentUpon>TorHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="torView.aspx.cs">
+      <DependentUpon>torView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="torView.aspx.designer.cs">
+      <DependentUpon>torView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tournament.aspx.cs">
+      <DependentUpon>Tournament.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tournament.aspx.designer.cs">
+      <DependentUpon>Tournament.aspx</DependentUpon>
     </Compile>
     <Compile Include="tournamentowner.aspx.cs">
       <DependentUpon>tournamentowner.aspx</DependentUpon>

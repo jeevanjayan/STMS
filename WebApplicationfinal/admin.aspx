@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="teamregs.aspx.cs" Inherits="WebApplicationfinal.teamregs" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
 
@@ -10236,40 +10236,7 @@ ul.spb-social2{
 <div class="row">
 <div class="col-sm-12">
 <form id="form1" runat="server">
-    <%--<asp:Panel ID="Panel1" runat="server" ForeColor="Red" Height="449px" 
-        BorderStyle="Groove" 
-        style="z-index: 1; left: 3px; top: 18px; position: absolute; height: 457px; width: 758px">
-        <asp:Panel ID="Panel3" runat="server" 
-            BorderStyle="Solid" 
-            
-            
-            
-            style="z-index: 2; left: 17px; top: 13px; position: absolute; height: 59px; width: 709px">
-            <asp:Label ID="Label8" runat="server" ForeColor="Black" 
-                style="z-index: 1; left: 234px; top: 7px; position: absolute; height: 45px; width: 256px; text-align: center; font-family: 'Times New Roman', Times, serif; font-size: xx-large;" 
-                Text="Administrator" Width="60px"></asp:Label>
-            <asp:Panel ID="Panel4" runat="server" 
-                style="z-index: 1; left: 125px; top: 79px; position: relative; height: 302px; width: 595px">
-            </asp:Panel>
-        </asp:Panel>
-        <asp:Panel ID="Panel2" runat="server" BackColor="White" BorderColor="Black" 
-            BorderStyle="Double" ForeColor="Black" 
-            
-            style="left: 8px; top: 5px; position: absolute; height: 437px; width: 126px; z-index: 3;">
-           <a href=shoplogin.aspx> <asp:Label ID="Label10" runat="server" ForeColor="Blue" 
-                style="z-index: 1; left: 22px; top: 183px; position: absolute; width: 64px; height: 39px; font-weight: 700; text-align: left" 
-                Text="News Update"></asp:Label></a>
-            <asp:Label ID="Label11" runat="server" ForeColor="Blue" 
-                style="z-index: 1; left: 22px; top: 256px; position: absolute; width: 79px; font-weight: 700; text-align: left; height: 43px" 
-                Text="View Tournaments"></asp:Label>
-            <asp:Label ID="Label12" runat="server" ForeColor="Blue" 
-                style="z-index: 1; left: 21px; top: 322px; position: absolute; height: 30px; font-weight: 700; text-align: left" 
-                Text="View Teams"></asp:Label>
-            <asp:Label ID="Label14" runat="server" Font-Bold="True" ForeColor="#3333FF" 
-                style="z-index: 1; left: 25px; top: 115px; position: absolute; height: 44px; width: 68px" 
-                Text="Tournament Approval"></asp:Label>
-        </asp:Panel>
-    </asp:Panel>--%>
+    
 
 
     <div class="container">

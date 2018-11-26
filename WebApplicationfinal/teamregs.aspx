@@ -10221,11 +10221,20 @@ ul.spb-social2{
     </asp:Panel>
     <asp:DropDownList ID="DropDownList12" runat="server" 
         
-        style="width: 125px; z-index: 1; left: 506px; top: 163px; position: absolute">
+        
+        style="width: 125px; z-index: 1; left: 506px; top: 163px; position: absolute" 
+        DataSourceID="SqlDataSource1" DataTextField="toname" DataValueField="toname">
         <asp:ListItem>KICK OFF</asp:ListItem>
         <asp:ListItem>CHALLENGERS</asp:ListItem>
         <asp:ListItem>SMASH</asp:ListItem>
     </asp:DropDownList>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+        ConnectionString="<%$ ConnectionStrings:STMSConnectionString %>" 
+        SelectCommand="SELECT [toname] FROM [tournament_details] WHERE ([torstatus] = @torstatus)">
+        <SelectParameters>
+            <asp:Parameter DefaultValue="a" Name="torstatus" Type="String" />
+        </SelectParameters>
+    </asp:SqlDataSource>
     <asp:DropDownList ID="DropDownList2" runat="server" 
         style="z-index: 1; left: 504px; top: 282px; position: absolute; width: 128px; right: 419px">
         <asp:ListItem>CE</asp:ListItem>
@@ -10280,7 +10289,7 @@ ul.spb-social2{
         
         
         
-        style="z-index: 1; left: 500px; top: 400px; position: absolute;color:Black;  width: 128px; height: 22px;"></asp:TextBox>
+        style="z-index: 1; left: 500px; top: 400px; position: absolute;color:Black;  width: 128px;"></asp:TextBox>
     <asp:TextBox ID="TextBox4" runat="server" 
         
         

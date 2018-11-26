@@ -20,6 +20,9 @@ namespace WebApplicationfinal {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlHead Head1;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList12;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList3;
         
         /// <summary>
         /// form1 control.
@@ -29,8 +32,5 @@ namespace WebApplicationfinal {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList11;
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList3;
     }
 }

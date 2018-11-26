@@ -6,35 +6,92 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.Data;
 
-
-    public partial class MY_PROJECT_Teamdetails : System.Web.UI.Page
+namespace WebApplicationfinal
+{
+    public partial class Teamdetails : System.Web.UI.Page
     {
-        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+        string user;
+        string user2;
+        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-A21TU20\SQLEXPRESS;Initial Catalog=STMS;Integrated Security=True");
         protected void Page_Load(object sender, EventArgs e)
         {
-                       
+            user = Request.QueryString.ToString();
+            //Response.Write(user);
+
+            try
+            {
+                string quer = "select * from team_details where teusername=@user";
+                SqlCommand cmd = new SqlCommand(quer, conn);
+                conn.Open();
+                SqlCommand gid = new SqlCommand("select teid from team_details where teusername='" + user + "'", conn);
+                String teamid = gid.ExecuteScalar().ToString();
+                SqlCommand unme = new SqlCommand("select tename from team_details where teusername='" + user + "'", conn);
+                String usrm = unme.ExecuteScalar().ToString();
+                SqlCommand gid2 = new SqlCommand("select tedepartment from team_details where teusername='" + user + "'", conn);
+                String depp = gid2.ExecuteScalar().ToString();
+                SqlCommand gud2 = new SqlCommand("select tesemester from team_details where teusername='" + user + "'", conn);
+                String dupp = gud2.ExecuteScalar().ToString();
+
+                teid.Text = teamid;
+                teamName.Text = usrm;
+                depnamee.Text = depp;
+                temsem.Text = dupp;
+                conn.Close();
+
+            }
+                
+
+            catch (Exception ex)
+            {
+            }
+
         }
-        protected void Button1_Click(object sender, EventArgs e)
+
+        protected void temSub(object sender, EventArgs e)
         {
             conn.Open();
-            string sq = "insert into team_details(tename,tedepartment,tesemester,teusername,tepassword) values(@tename,@tedepartment,@tesemester,@teusername,@tepassword)";
-            SqlCommand cm = new SqlCommand(sq, conn);
-           // string drpp1 = DropDownList11.SelectedValue.ToString();
-           // string drppl2 = DropDownList12.SelectedValue.ToString();
-            cm.Parameters.AddWithValue("@tename", Request.Form["Textbox3"]);
-         //   cm.Parameters.AddWithValue("@tedepartment", drpp1);
-          //  cm.Parameters.AddWithValue("@tesemester", drppl2);
-            cm.Parameters.AddWithValue("@teusername", Request.Form["Textbox4"]);
-            cm.Parameters.AddWithValue("@tepassword", Request.Form["Textbox5"]);
-        }
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-            
+
+
+            string sql = "update team_details set tecaptainname=@tecaptainname,tephno=@tephono,teemail=@teemail where teid='" + teid.Text + "'";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+
+            cmd.Parameters.AddWithValue("@tecaptainname", Request.Form["temCapt"]);
+            cmd.Parameters.AddWithValue("@tephono", Request.Form["temPhon"]);
+            cmd.Parameters.AddWithValue("@teemail", Request.Form["temEmail"]);
+            cmd.ExecuteNonQuery();
+
+            conn.Close();
         }
 
-        protected void DropDownList12_SelectedIndexChanged(object sender, EventArgs e)
+        protected void checkstatusTeam(object sender, EventArgs e)
         {
+            conn.Open();
+            user2 = Request.QueryString.ToString();
+            //Response.Write(user2);
 
+            string cmmd = "select testatus from team_details where teusername='" + user2 + "'";
+            SqlCommand coo = new SqlCommand(cmmd, conn);
+            string deep = coo.ExecuteScalar().ToString();
+            Response.Write(deep);
+            string a = "a";
+
+
+            if (deep == a)
+            {
+                Response.Redirect("Teamplayers.aspx");
+
+            }
+            else
+            {
+
+                Response.Write("<script LANGUAGE='JavaScript'>alert('Your registration is not approved')</script>");
+
+
+
+            }
+            conn.Close();
         }
+    }
 }

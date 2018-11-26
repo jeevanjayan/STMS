@@ -23,7 +23,11 @@ namespace WebApplicationfinal
             //GridView1.DataSource = rdr;
             //GridView1.DataBind();
             //conn.Close();
-        }
 
-    }
+        }
+       
+ 
+   }
+
+
 }
