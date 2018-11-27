@@ -23,7 +23,7 @@ namespace WebApplicationfinal
                 SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-A21TU20\SQLEXPRESS;Initial Catalog=STMS;Integrated Security=True");
                 conn.Open();
 
-                string checkuname = "select count(*) from adminlogin where auname='" + id.Text + "'";
+                string checkuname = "select count(*) from adminlogin where auname='" + useridd.Text + "'";
                 SqlCommand unn = new SqlCommand(checkuname, conn);
                 string unnn = unn.ExecuteScalar().ToString();
                 int unnnn = Convert.ToInt32(unnn);
@@ -35,7 +35,7 @@ namespace WebApplicationfinal
                 else
                 {
 
-                    string checkpassword = "select aps from adminlogin where auname='" + id.Text + "'";
+                    string checkpassword = "select aps from adminlogin where auname='" + useridd.Text + "'";
                     SqlCommand pass = new SqlCommand(checkpassword, conn);
                     string passs = pass.ExecuteScalar().ToString();
 
@@ -52,10 +52,10 @@ namespace WebApplicationfinal
             }
             else if (loginintodd.SelectedValue == "Team")
             {
-                SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-A21TU20\SQLEXPRESS;Initial Catalog=STMS;Integrated Security=True");
+                 SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-A21TU20\SQLEXPRESS;Initial Catalog=STMS;Integrated Security=True");
                 conn.Open();
 
-                string checkuname = "select count(*) from team_details where teusername='" + id.Text + "'";
+                string checkuname = "select count(*) from team_details where teusername='" + useridd.Text + "'";
                 SqlCommand unn = new SqlCommand(checkuname, conn);
                 string unnn = unn.ExecuteScalar().ToString();
                 int unnnn = Convert.ToInt32(unnn);
@@ -67,31 +67,28 @@ namespace WebApplicationfinal
                 else
                 {
 
-                    string checkpassword = "select tepassword from team_details where teusername='" + id.Text + "'";
+                    string checkpassword = "select tepassword from team_details where teusername='" + useridd.Text + "'";
                     SqlCommand pass = new SqlCommand(checkpassword, conn);
                     string passs = pass.ExecuteScalar().ToString();
-                    String inp=password.Text;
-                    if (passs != inp)
+
+                    if (passs == password.Text)
                     {
-                        Response.Redirect("Teamdetails.aspx?" + id.Text);
-                        Session["team"] = id.Text;
-                        idselection.Text = inp;
+                        Response.Redirect("Teamdetails.aspx?" + useridd.Text);
+                        
                     }
                     else
                     {
                         Response.Write("<script LANGUAGE='JavaScript'>alert('Invalid Password')</script>");
-                        idselection.Text = inp;
                     }
-                    
                 }
-                Response.Redirect("Tournament.aspx;");
+               
             }
             else if (loginintodd.SelectedValue == "Tournament Owner")
             {
                 SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-A21TU20\SQLEXPRESS;Initial Catalog=STMS;Integrated Security=True");
                 conn.Open();
 
-                string checkuname = "select count(*) from tournament_details where username='" + id.Text + "'";
+                string checkuname = "select count(*) from tournament_details where username='" + useridd.Text + "'";
                 SqlCommand unn = new SqlCommand(checkuname, conn);
                 string unnn = unn.ExecuteScalar().ToString();
                 int unnnn = Convert.ToInt32(unnn);
@@ -103,23 +100,24 @@ namespace WebApplicationfinal
                 else
                 {
 
-                    string checkpassword = "select passwors from tournament_details where username='" + id.Text + "'";
+                    string checkpassword = "select passwors from tournament_details where username='" + useridd.Text + "'";
                     SqlCommand pass = new SqlCommand(checkpassword, conn);
                     string passs = pass.ExecuteScalar().ToString();
                     String inp = password.Text;
-                    if (passs != inp)
+                    if (passs == inp)
                     {
-                        Response.Redirect("TorHome.aspx?" + id.Text );
-                        Session["tournament"] = id.Text;
-                        idselection.Text = inp;
+                        Response.Redirect("TorHome.aspx?" + useridd.Text );
+                        Session["tournament"] = useridd.Text;
+                        
                     }
                     else
                     {
                         Response.Write("<script LANGUAGE='JavaScript'>alert('Invalid Password')</script>");
-                        idselection.Text = inp;
+                        
                     }
 
                 }
+
                 
             }
         }

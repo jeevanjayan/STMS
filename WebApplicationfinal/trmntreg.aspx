@@ -10099,12 +10099,27 @@ ul.spb-social2{
 .pp_social{
     display: none !important;
 }
-
+ .logout
+        {
+            position: fixed;
+    top: 11px;
+    right: 11px;
+    
+    border-radius: 5px;
+    padding: 9px;
+    font-size: 16px;
+    background: green;
+    color: White;
+    cursor: pointer
+            }
+    
+    
 
     </style>
     <title>Tournament registration</title>
 </head>
 <body>
+
 <div class="header-8">
 			<div class="container">
 				<!--NAVIGATION START-->
@@ -10115,10 +10130,10 @@ ul.spb-social2{
 						 </li>
                          <li>
                            
-                        <a href="About.aspx">About Us</a></li>
+                        <a href="#">About Us</a></li>
                    
                           <li>
-                           <a id="HyperLink2" href="Default.aspx#fixer-098">Fixture</a>
+                           <a id="HyperLink2" href="#">Fixture</a>
                           
                          
                           </li>
@@ -10137,26 +10152,17 @@ ul.spb-social2{
 					<ul>
                          <li >
                             <a  id="A1">Tournament</a>
-                            <ul class="children">
-							  <li><a href="trmntreg.aspx">Tournament registration</a></li>
-							  
-							  <li><a href="#">Tournament Detail</a></li>
-							</ul>
+                            
                     
                           </li>
 						<li>
 							<a href="#">Team &amp; Player</a>
-							<ul class="children">
-							 <li><a href="teamregs.aspx
-                              ">Team Registration</a></li>
-							  <li><a href="player-detail.html">Player detail</a></li>
-							  <li><a href="team-detail.html">Team Detail</a></li>
-							</ul>
+							
                           </li>
                           
 			 
                           <li class="last">
-                              <a href="Contact.aspx">contact</a> 
+                              <a >contact</a> 
                           </li>
 					</ul>
 				</div>
@@ -10176,16 +10182,12 @@ ul.spb-social2{
                       <!-- Collect the nav links, forms, and other content for toggling -->
                       <div class="collapse navbar-collapse" id="navbar-collapse">
                         <ul class="nav navbar-nav">
-                           <li><a href="index-2.html">Home</a> 
+                           <li><a href="default.html">Home</a> 
 						   </li>
-						 <li><a href="team-info.html">About Us</a></li>
+						 <li><a href="#">About Us</a></li>
                         
 							<a href="#">Team &amp; Player</a>
-							<ul class="children">
-							  <li><a href="player-list.html">Players</a></li>
-							  <li><a href="player-detail.html">Player detail</a></li>
-							  <li><a href="team-detail.html">Team Detail</a></li>
-							</ul>
+							
 						  
 						 
                           <li class="last"><a href="#">contact Us</a>
@@ -10202,6 +10204,8 @@ ul.spb-social2{
 <div class="col-sm-12">
 
 <form id="form2" runat="server">
+<asp:Button ID="Button2" runat="server" class="logout"  Text="Logout" 
+        onclick="Button2_Click" />
     <asp:Panel ID="Panel1" runat="server" BorderColor="Red" BorderStyle="none" 
         style="z-index: 1; left: 45px; top: 23px; position: absolute; height: 72px; width: 685px; text-align: center">
         
@@ -10241,8 +10245,14 @@ ul.spb-social2{
         style="z-index: 1; color:Black;  left: 451px; top: 354px; position: absolute; "></asp:TextBox>
     <asp:DropDownList ID="DropDownList1" runat="server" 
         style="z-index: 1; left: 453px; top: 205px; position: absolute; height: 27px; width: 172px;">
-        <asp:ListItem>mca </asp:ListItem>
-        <asp:ListItem>cs</asp:ListItem>
+        <asp:ListItem>MCA </asp:ListItem>
+        <asp:ListItem>CS</asp:ListItem>
+        <asp:ListItem>Civil</asp:ListItem>
+        <asp:ListItem>Mech</asp:ListItem>
+        <asp:ListItem>EC</asp:ListItem>
+        <asp:ListItem>EEE</asp:ListItem>
+        <asp:ListItem>M Tech</asp:ListItem>
+
     </asp:DropDownList>   
     <p>
     <asp:Button ID="Button1" runat="server"  

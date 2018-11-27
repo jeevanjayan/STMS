@@ -17,7 +17,7 @@ public partial class MY_PROJECT_Tournament : System.Web.UI.Page
     {
 
         user = Request.QueryString.ToString();
-        Response.Write(user);
+       // Response.Write(user);
        
         try
         {
@@ -71,36 +71,25 @@ public partial class MY_PROJECT_Tournament : System.Web.UI.Page
 
         cmd.ExecuteNonQuery();
         conn.Close();
+        Response.Write("<script LANGUAGE='JavaScript'>alert('Registered successfully')</script>");
 
     }
 
-    protected void checkstatus(object sender, EventArgs e)
+    
+    protected void Button2_Click(object sender, EventArgs e)
     {
-        conn.Open();
-        user2 = Request.QueryString.ToString();
-        //Response.Write(user2);
+        Session.Abandon();
+        Response.Redirect("login.aspx");
+    }
 
-        string cmmd = "select torstatus from tournament_details where username='" + user2 + "'";
-        SqlCommand coo = new SqlCommand(cmmd, conn);
-        string deep = coo.ExecuteScalar().ToString();
-        Response.Write(deep);
-        string a = "a         ";
-
-
-        if (deep == a)
-        {
-            Response.Redirect("login.aspx");
-           
-        }
-        else
-        {
-
-            Response.Write("<script LANGUAGE='JavaScript'>alert('Your registration is not approved')</script>");
-     
-            
-           
-        }
-        conn.Close();
+    protected void Unnamed2_Click(object sender, EventArgs e)
+    {
+        depphNo.Text = "";
+        torVen.Text = "";
+        depEmail.Text = "";
+        strDate.Text = "";
+        endDate.Text = "";
+        matTime.Text = "";
     }
 
     

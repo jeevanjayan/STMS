@@ -37,5 +37,11 @@ namespace WebApplicationfinal
             GridView1.Visible = true;
             conn.Close();
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("login.aspx");
+        }
     }
 }

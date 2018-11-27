@@ -10162,6 +10162,10 @@ ul.spb-social2{
 </head>
 
 <body>
+<div style="position:absolute;top:15px;left:15px;">
+<asp:Label ID="Label1" runat="server"  ForeColor="White" Text="Status:"></asp:Label>
+<asp:Label ID="Label2" runat="server"  ForeColor="White"></asp:Label>
+</div>
 <div class="header-8">
 			<div class="container">
 				<!--NAVIGATION START-->
@@ -10172,10 +10176,10 @@ ul.spb-social2{
 						 </li>
                          <li>
                            
-                        <a href="About.aspx">About Us</a></li>
+                        <a href="#">About Us</a></li>
                    
                           <li>
-                           <a id="HyperLink2" href="Default.aspx#fixer-098">Fixture</a>
+                           <a id="HyperLink2" href="#">Fixture</a>
                           
                          
                           </li>
@@ -10193,27 +10197,18 @@ ul.spb-social2{
 				<div class="kode-navigation">
 					<ul>
                          <li >
-                            <a  id="A1">Tournament</a>
-                            <ul class="children">
-							  <li><a href="trmntreg.aspx">Tournament registration</a></li>
-							  
-							  <li><a href="#">Tournament Detail</a></li>
-							</ul>
+                            <a   id="A1">Tournament</a>
+                            
                     
                           </li>
 						<li>
 							<a href="#">Team &amp; Player</a>
-							<ul class="children">
-							 <li><a href="teamregs.aspx
-                              ">Team Registration</a></li>
-							  <li><a href="player-detail.html">Player detail</a></li>
-							  <li><a href="team-detail.html">Team Detail</a></li>
-							</ul>
+							
                           </li>
                           
 			 
                           <li class="last">
-                              <a href="Contact.aspx">contact</a> 
+                              <a >contact</a> 
                           </li>
 					</ul>
 				</div>
@@ -10233,16 +10228,12 @@ ul.spb-social2{
                       <!-- Collect the nav links, forms, and other content for toggling -->
                       <div class="collapse navbar-collapse" id="navbar-collapse">
                         <ul class="nav navbar-nav">
-                           <li><a href="index-2.html">Home</a> 
+                           <li><a href="default.html">Home</a> 
 						   </li>
-						 <li><a href="team-info.html">About Us</a></li>
+						 <li><a href="#">About Us</a></li>
                         
 							<a href="#">Team &amp; Player</a>
-							<ul class="children">
-							  <li><a href="player-list.html">Players</a></li>
-							  <li><a href="player-detail.html">Player detail</a></li>
-							  <li><a href="team-detail.html">Team Detail</a></li>
-							</ul>
+							
 						  
 						 
                           <li class="last"><a href="#">contact Us</a>
@@ -10255,9 +10246,9 @@ ul.spb-social2{
 			</div>
 		</div>
                  <div class="main">
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <div  class="carouel slide" data-ride="carousel">
                             <!-- Indicators -->
-                            <ol class="carousel-indicators">
+                            <ol class="carouel-indicators">
                               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                               <li data-target="#myCarousel" data-slide-to="1"></li>
                               <li data-target="#myCarousel" data-slide-to="2"></li>
@@ -10266,6 +10257,10 @@ ul.spb-social2{
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
                               <div class="item active">
+                                  
+                                  <a href="#" style="color:White;">
+                                  
+                                  </a>
                                 <img src="Styles/extra-images/slide1.jpg" alt="Los Angeles">
                               </div>
                           
@@ -10279,7 +10274,7 @@ ul.spb-social2{
                             </div>
                           
                             <!-- Left and right controls -->
-                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <a class="left carousel-control" style="width:30px;" href="#myCarousel" data-slide="prev">
                               <span class="glyphicon glyphicon-chevron-left"></span>
                               <span class="sr-only">Previous</span>
                             </a>
@@ -10301,7 +10296,8 @@ ul.spb-social2{
     color: white;">
     <div class="row">
     <div class="col-sm-12">
-    <div class="logout">Logout</div>
+    <asp:Button ID="Button2" runat="server" class="logout"  Text="Logout" 
+        onclick="Button2_Click" />
     <div style="text-align: center;
     font-size: 30px;
     padding: 20px;
@@ -10325,7 +10321,7 @@ ul.spb-social2{
             runat="server" id="Unnamed2" onclick="Unnamed2_Click">
             </asp:LinkButton>
             </div>
-    <div class="listt"><a href="#" style="color:White;">Schedule</a></div>
+    <div class="listt"><a href="ResultSc.aspx" style="color:White;">Schedule</a></div>
     </div>
     
     </div>

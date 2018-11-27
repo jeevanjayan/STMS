@@ -19,7 +19,7 @@ namespace WebApplicationfinal
         {
             try
             {
-                string quer = "select * from digit where id=2";
+                string quer = "select orderno from digit where id=2";
                 conn.Open();
                 SqlDataAdapter sda = new SqlDataAdapter(quer, conn);
                 DataSet ds = new DataSet();
@@ -57,12 +57,18 @@ namespace WebApplicationfinal
             cmn.Parameters.AddWithValue("@value", value);
             cmn.ExecuteNonQuery();
             conn.Close();
-            Response.Redirect("shoplogin.aspx");
+            Response.Redirect("login.aspx");
         }
 
         protected void TextBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("login.aspx");
         }      
     }
 }

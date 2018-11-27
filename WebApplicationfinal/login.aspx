@@ -63,7 +63,7 @@
             </td >
             
             <td class="nnnn" style="color: black;" colspan="18">
-                <asp:TextBox style=" border:none;color: black;border-radius: 8px;" ID="id" runat="server" Width="180px" CssClass="form_input"></asp:TextBox>
+                <asp:TextBox style=" border:none;color: black;border-radius: 8px;" ID="useridd" runat="server" Width="180px" CssClass="form_input"></asp:TextBox>
             </td >
             
         </tr>

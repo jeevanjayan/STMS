@@ -57,7 +57,7 @@ namespace WebApplicationfinal
                     Button lb2 = new Button();
                     lb2.Text = "Reject";
                     lb2.CommandName = "reject";
-                    lb.Command += LinkButton_Command;
+                    lb2.Command += LinkButton_Command;
                     row.Cells[10].Controls.Add(lb2);
                 }
             }
@@ -79,16 +79,16 @@ namespace WebApplicationfinal
             }
             else if (e.CommandName == "reject")
             {
+                Response.Write("zad");
                 string id = GridView1.Rows[0].Cells[0].Text;
                 SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-A21TU20\SQLEXPRESS;Initial Catalog=STMS;Integrated Security=True");
                 conn.Open();
-
                 string sqll = "update team_details set testatus='r' where teid='" + id + "'";
                 SqlCommand cmd = new SqlCommand(sqll, conn);
-
                 cmd.ExecuteNonQuery();
                 conn.Close();
                 Page.Response.Redirect(Page.Request.Url.ToString(), true);
+                // Response.Redirect("temApprov.aspx");
 
             }
             
@@ -97,6 +97,12 @@ namespace WebApplicationfinal
         protected void GridView1_DataBound(object sender, EventArgs e)
         {
             AddLinkButton();
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("login.aspx");
         }
 
        

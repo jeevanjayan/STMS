@@ -10148,6 +10148,7 @@ ul.spb-social2{
 
 </head>
 <body>
+
 <div class="header-8">
 			<div class="container">
 				<!--NAVIGATION START-->
@@ -10158,10 +10159,10 @@ ul.spb-social2{
 						 </li>
                          <li>
                            
-                        <a href="About.aspx">About Us</a></li>
+                        <a href="#">About Us</a></li>
                    
                           <li>
-                           <a id="HyperLink2" href="Default.aspx#fixer-098">Fixture</a>
+                           <a id="HyperLink2" href="#">Fixture</a>
                           
                          
                           </li>
@@ -10180,26 +10181,17 @@ ul.spb-social2{
 					<ul>
                          <li >
                             <a  id="A1">Tournament</a>
-                            <ul class="children">
-							  <li><a href="trmntreg.aspx">Tournament registration</a></li>
-							  
-							  <li><a href="#">Tournament Detail</a></li>
-							</ul>
+                            
                     
                           </li>
 						<li>
 							<a href="#">Team &amp; Player</a>
-							<ul class="children">
-							 <li><a href="teamregs.aspx
-                              ">Team Registration</a></li>
-							  <li><a href="player-detail.html">Player detail</a></li>
-							  <li><a href="team-detail.html">Team Detail</a></li>
-							</ul>
+							
                           </li>
                           
 			 
                           <li class="last">
-                              <a href="Contact.aspx">contact</a> 
+                              <a >contact</a> 
                           </li>
 					</ul>
 				</div>
@@ -10219,16 +10211,12 @@ ul.spb-social2{
                       <!-- Collect the nav links, forms, and other content for toggling -->
                       <div class="collapse navbar-collapse" id="navbar-collapse">
                         <ul class="nav navbar-nav">
-                           <li><a href="index-2.html">Home</a> 
+                           <li><a href="default.html">Home</a> 
 						   </li>
-						 <li><a href="team-info.html">About Us</a></li>
+						 <li><a href="#">About Us</a></li>
                         
 							<a href="#">Team &amp; Player</a>
-							<ul class="children">
-							  <li><a href="player-list.html">Players</a></li>
-							  <li><a href="player-detail.html">Player detail</a></li>
-							  <li><a href="team-detail.html">Team Detail</a></li>
-							</ul>
+							
 						  
 						 
                           <li class="last"><a href="#">contact Us</a>
@@ -10245,6 +10233,8 @@ ul.spb-social2{
 <div class="col-sm-12">
 
 <form id="form2" runat="server">
+<asp:Button ID="Button2" runat="server" class="logout"  Text="Logout" 
+        onclick="Button2_Click" />
 <div style="text-align: center;
     font-size: 30px;
     padding: 20px;
@@ -10265,8 +10255,9 @@ ul.spb-social2{
     <div class="detailss">Match time</div>
     </div>
     <div style="display:block;" class="col-sm-6">
-   <asp:DropDownList ID="torIDtext" style="width: inherit;" class="inputcl" runat="server" DataSourceID="SqlDataSource2" 
-            DataTextField="toid" DataValueField="toid"></asp:DropDownList>
+   <asp:DropDownList ID="torIDtext" style="width: inherit;" class="inputcl" 
+            runat="server" DataSourceID="SqlDataSource2" 
+            DataTextField="toid" DataValueField="toid" Enabled="False"></asp:DropDownList>
     
         <asp:SqlDataSource ID="SqlDataSource2" runat="server" 
             ConnectionString="<%$ ConnectionStrings:STMSConnectionString %>" 
@@ -10312,9 +10303,9 @@ ul.spb-social2{
     <asp:Button type="submit" Text="Submit" runat="server" class="logoutt" 
             onclick="buttonsubteamdet" />
             
-    <button type="reset"  runat="server" class="logoutt">Reset</button>
-    <asp:Button   type="submit" Text="Enter" runat="server" class="logoutt" 
-            onclick="checkstatus" />
+    <asp:Button type="reset" Text="Reset" runat="server"  class="logoutt" 
+            onclick="Unnamed2_Click" />
+    
     </div>
 
 

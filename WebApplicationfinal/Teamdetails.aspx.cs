@@ -22,8 +22,8 @@ namespace WebApplicationfinal
 
             try
             {
-                string quer = "select * from team_details where teusername=@user";
-                SqlCommand cmd = new SqlCommand(quer, conn);
+               // string quer = "select * from team_details where teusername=@user";
+                //SqlCommand cmd = new SqlCommand(quer, conn);
                 conn.Open();
                 SqlCommand gid = new SqlCommand("select teid from team_details where teusername='" + user + "'", conn);
                 String teamid = gid.ExecuteScalar().ToString();
@@ -33,11 +33,32 @@ namespace WebApplicationfinal
                 String depp = gid2.ExecuteScalar().ToString();
                 SqlCommand gud2 = new SqlCommand("select tesemester from team_details where teusername='" + user + "'", conn);
                 String dupp = gud2.ExecuteScalar().ToString();
+                SqlCommand gud3 = new SqlCommand("select tephno from team_details where teid='" + teamid + "'", conn);
+                 String phon = gud3.ExecuteScalar().ToString();
+                SqlCommand gud4 = new SqlCommand("select tecaptainname from team_details where teid='" + teamid + "'", conn);
+                 String capp = gud4.ExecuteScalar().ToString();
+                SqlCommand gud5 = new SqlCommand("select teemail from team_details where teid='" + teamid + "'", conn);
+                String emll = gud5.ExecuteScalar().ToString();
+                
 
                 teid.Text = teamid;
                 teamName.Text = usrm;
                 depnamee.Text = depp;
                 temsem.Text = dupp;
+                temEmail.Text = emll;
+                temPhon.Text = phon;
+                temCapt.Text = capp;
+                
+
+               /* if (phon != null)
+                {
+                   temPhon.Text = phon;
+                    temCapt.Text = capp;
+                    temEmail.Text = emll;
+                }
+                */
+
+               
                 conn.Close();
 
             }
@@ -61,7 +82,9 @@ namespace WebApplicationfinal
             cmd.Parameters.AddWithValue("@tephono", Request.Form["temPhon"]);
             cmd.Parameters.AddWithValue("@teemail", Request.Form["temEmail"]);
             cmd.ExecuteNonQuery();
-
+            Response.Redirect("login.aspx");
+            Response.Write("<script LANGUAGE='JavaScript'>alert('Registered successfully')</script>");
+            
             conn.Close();
         }
 
@@ -92,6 +115,22 @@ namespace WebApplicationfinal
 
             }
             conn.Close();
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("login.aspx");
+        }
+
+        protected void Unnamed2_Click(object sender, EventArgs e)
+        {
+            temPhon.Text = "";
+            temCapt.Text = "";
+            temEmail.Text = "";
+            
+
+            
         }
     }
 }

@@ -61,13 +61,13 @@
     <Content Include="App_Data\smtpdatabase_Log.LDF">
       <DependentUpon>smtpdatabase.mdf</DependentUpon>
     </Content>
-    <Content Include="deptteam.aspx" />
-    <Content Include="details.aspx" />
+    <Content Include="news.aspx" />
+    <Content Include="ResultSc.aspx" />
     <Content Include="images\baseball.jpg" />
     <Content Include="login.aspx" />
-    <Content Include="shoplogin.aspx" />
+    <Content Include="schedule.aspx" />
+    <Content Include="Scripts\default.html" />
     <Content Include="Styles\Site.css" />
-    <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
@@ -76,12 +76,15 @@
     <Content Include="Teamplayers.aspx" />
     <Content Include="teamregs.aspx" />
     <Content Include="temApprov.aspx" />
+    <Content Include="temHome.aspx" />
     <Content Include="torApprov.aspx" />
     <Content Include="TorHome.aspx" />
     <Content Include="torView.aspx" />
     <Content Include="Tournament.aspx" />
-    <Content Include="tournamentowner.aspx" />
     <Content Include="trmntreg.aspx" />
+    <Content Include="venueaspx.aspx" />
+    <Content Include="viewTeamad.aspx" />
+    <Content Include="viewTornment.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -106,26 +109,19 @@
     <Compile Include="admin.aspx.designer.cs">
       <DependentUpon>admin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="news.aspx.cs">
+      <DependentUpon>news.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="news.aspx.designer.cs">
+      <DependentUpon>news.aspx</DependentUpon>
     </Compile>
-    <Compile Include="deptteam.aspx.cs">
-      <DependentUpon>deptteam.aspx</DependentUpon>
+    <Compile Include="ResultSc.aspx.cs">
+      <DependentUpon>ResultSc.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="deptteam.aspx.designer.cs">
-      <DependentUpon>deptteam.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="details.aspx.cs">
-      <DependentUpon>details.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="details.aspx.designer.cs">
-      <DependentUpon>details.aspx</DependentUpon>
+    <Compile Include="ResultSc.aspx.designer.cs">
+      <DependentUpon>ResultSc.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -145,12 +141,12 @@
     <Compile Include="PublicMaster.Master.designer.cs">
       <DependentUpon>PublicMaster.Master</DependentUpon>
     </Compile>
-    <Compile Include="shoplogin.aspx.cs">
-      <DependentUpon>shoplogin.aspx</DependentUpon>
+    <Compile Include="schedule.aspx.cs">
+      <DependentUpon>schedule.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="shoplogin.aspx.designer.cs">
-      <DependentUpon>shoplogin.aspx</DependentUpon>
+    <Compile Include="schedule.aspx.designer.cs">
+      <DependentUpon>schedule.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -187,6 +183,13 @@
     <Compile Include="temApprov.aspx.designer.cs">
       <DependentUpon>temApprov.aspx</DependentUpon>
     </Compile>
+    <Compile Include="temHome.aspx.cs">
+      <DependentUpon>temHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="temHome.aspx.designer.cs">
+      <DependentUpon>temHome.aspx</DependentUpon>
+    </Compile>
     <Compile Include="torApprov.aspx.cs">
       <DependentUpon>torApprov.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -215,16 +218,33 @@
     <Compile Include="Tournament.aspx.designer.cs">
       <DependentUpon>Tournament.aspx</DependentUpon>
     </Compile>
-    <Compile Include="tournamentowner.aspx.cs">
-      <DependentUpon>tournamentowner.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
     <Compile Include="trmntreg.aspx.cs">
       <DependentUpon>trmntreg.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="trmntreg.aspx.designer.cs">
       <DependentUpon>trmntreg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="venueaspx.aspx.cs">
+      <DependentUpon>venueaspx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="venueaspx.aspx.designer.cs">
+      <DependentUpon>venueaspx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewTeamad.aspx.cs">
+      <DependentUpon>viewTeamad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewTeamad.aspx.designer.cs">
+      <DependentUpon>viewTeamad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewTornment.aspx.cs">
+      <DependentUpon>viewTornment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewTornment.aspx.designer.cs">
+      <DependentUpon>viewTornment.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>

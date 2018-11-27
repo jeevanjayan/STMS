@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="torView.aspx.cs" Inherits="WebApplicationfinal.torView" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="viewTornment.aspx.cs" Inherits="WebApplicationfinal.viewTornment" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!DOCTYPE html />
+
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head    runat="server">
-    <title>View team</title>
+<head id="Head1"    runat="server">
+    <title>View Tournament</title>
 
    
 
@@ -10151,6 +10151,7 @@ ul.spb-social2{
 
 </head>
 <body>
+
 <div class="header-8">
 			<div class="container">
 				<!--NAVIGATION START-->
@@ -10161,10 +10162,10 @@ ul.spb-social2{
 						 </li>
                          <li>
                            
-                        <a href="About.aspx">About Us</a></li>
+                        <a href="#">About Us</a></li>
                    
                           <li>
-                           <a id="HyperLink2" href="Default.aspx#fixer-098">Fixture</a>
+                           <a id="HyperLink2" href="#">Fixture</a>
                           
                          
                           </li>
@@ -10183,26 +10184,17 @@ ul.spb-social2{
 					<ul>
                          <li >
                             <a  id="A1">Tournament</a>
-                            <ul class="children">
-							  <li><a href="trmntreg.aspx">Tournament registration</a></li>
-							  
-							  <li><a href="#">Tournament Detail</a></li>
-							</ul>
+                            
                     
                           </li>
 						<li>
 							<a href="#">Team &amp; Player</a>
-							<ul class="children">
-							 <li><a href="teamregs.aspx
-                              ">Team Registration</a></li>
-							  <li><a href="#">Player detail</a></li>
-							  <li><a href="#">Team Detail</a></li>
-							</ul>
+							
                           </li>
                           
 			 
                           <li class="last">
-                              <a href="Contact.aspx">contact</a> 
+                              <a >contact</a> 
                           </li>
 					</ul>
 				</div>
@@ -10222,16 +10214,12 @@ ul.spb-social2{
                       <!-- Collect the nav links, forms, and other content for toggling -->
                       <div class="collapse navbar-collapse" id="navbar-collapse">
                         <ul class="nav navbar-nav">
-                           <li><a href="default">Home</a> 
+                           <li><a href="default.html">Home</a> 
 						   </li>
 						 <li><a href="#">About Us</a></li>
                         
 							<a href="#">Team &amp; Player</a>
-							<ul class="children">
-							  <li><a href="#">Players</a></li>
-							  <li><a href="#">Player detail</a></li>
-							  <li><a href="">Team Detail</a></li>
-							</ul>
+							
 						  
 						 
                           <li class="last"><a href="#">contact Us</a>
@@ -10244,14 +10232,39 @@ ul.spb-social2{
 			</div>
 		</div>
     <form id="form1" runat="server">
-    <asp:Button ID="Button2" runat="server" style="width: auto" class="logout"  Text="Logout" 
+    <asp:Button ID="Button2" runat="server" class="logout"  Text="Logout" 
         onclick="Button2_Click" />
-    <asp:GridView ID="GridView1"    runat="server">
+    <div>
     
-    <Columns>
-               
-            </Columns>
+    </div>
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
+        DataKeyNames="toid" DataSourceID="SqlDataSource1">
+        <Columns>
+            <asp:BoundField DataField="toid" HeaderText="Id" ReadOnly="True" 
+                SortExpression="toid" />
+            <asp:BoundField DataField="username" HeaderText="User name" 
+                SortExpression="username" />
+            <asp:BoundField DataField="tophoneno" HeaderText="Phone no" 
+                SortExpression="tophoneno" />
+            <asp:BoundField DataField="toemail" HeaderText="Email" 
+                SortExpression="toemail" />
+            <asp:BoundField DataField="toname" HeaderText="Tor name" 
+                SortExpression="toname" />
+            <asp:BoundField DataField="todepartment" HeaderText="Department" 
+                SortExpression="todepartment" />
+            <asp:BoundField DataField="tosdate" HeaderText="Start date" 
+                SortExpression="tosdate" />
+            <asp:BoundField DataField="toedate" HeaderText="End date" 
+                SortExpression="toedate" />
+            <asp:BoundField DataField="tovenue" HeaderText="Venue" 
+                SortExpression="tovenue" />
+            <asp:BoundField DataField="totime" HeaderText="Time" SortExpression="totime" />
+        </Columns>
     </asp:GridView>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+        ConnectionString="<%$ ConnectionStrings:STMSConnectionString %>" 
+        SelectCommand="SELECT * FROM [tournament_details] ORDER BY [toid]">
+    </asp:SqlDataSource>
     </form>
 </body>
 </html>

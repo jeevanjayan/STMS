@@ -31,8 +31,14 @@ namespace WebApplicationfinal
             cmd.Parameters.AddWithValue("@page", concatenated2);
             cmd.ExecuteNonQuery();
             conn.Close();
-            
+            Response.Write("<script LANGUAGE='JavaScript'>alert('Registered successfully')</script>");
 
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("login.aspx");
         }
     }
 }

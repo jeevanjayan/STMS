@@ -84,10 +84,28 @@
 </script>
     <title></title>
     
-
+    <style>
+     .logout
+        {
+            position: fixed;
+    top: 11px;
+    right: 11px;
+    
+    border-radius: 5px;
+    padding: 9px;
+    font-size: 16px;
+    background: green;
+    color: White;
+    cursor: pointer
+            }
+    
+    </style>
 </head>
 <body>
+
     <form id="form1" runat="server">
+    <asp:Button ID="Button2" runat="server" class="logout"  Text="Logout" 
+        onclick="Button2_Click" />
     <div>
     
     </div>

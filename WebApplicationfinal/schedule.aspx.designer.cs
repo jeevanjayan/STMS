@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplicationfinal {
+namespace WebApplication1 {
     
     
-    public partial class Teamplayers {
+    public partial class schedule {
         
         /// <summary>
         /// form1 control.
@@ -22,309 +22,255 @@ namespace WebApplicationfinal {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Button2 control.
+        /// Label25 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Label Label25;
         
         /// <summary>
-        /// name1 control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox name1;
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// ad1 control.
+        /// tm1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ad1;
+        protected global::System.Web.UI.WebControls.Label tm1;
         
         /// <summary>
-        /// age1 control.
+        /// Label3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox age1;
+        protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// name2 control.
+        /// tm2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox name2;
+        protected global::System.Web.UI.WebControls.Label tm2;
         
         /// <summary>
-        /// ad2 control.
+        /// venue1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ad2;
+        protected global::System.Web.UI.WebControls.Label venue1;
         
         /// <summary>
-        /// age2 control.
+        /// d1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox age2;
+        protected global::System.Web.UI.WebControls.Label d1;
         
         /// <summary>
-        /// name3 control.
+        /// Label26 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox name3;
+        protected global::System.Web.UI.WebControls.Label Label26;
         
         /// <summary>
-        /// ad3 control.
+        /// Label7 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ad3;
+        protected global::System.Web.UI.WebControls.Label Label7;
         
         /// <summary>
-        /// age3 control.
+        /// tm3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox age3;
+        protected global::System.Web.UI.WebControls.Label tm3;
         
         /// <summary>
-        /// name4 control.
+        /// Label9 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox name4;
+        protected global::System.Web.UI.WebControls.Label Label9;
         
         /// <summary>
-        /// ad4 control.
+        /// tm4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ad4;
+        protected global::System.Web.UI.WebControls.Label tm4;
         
         /// <summary>
-        /// age4 control.
+        /// venue2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox age4;
+        protected global::System.Web.UI.WebControls.Label venue2;
         
         /// <summary>
-        /// name5 control.
+        /// d2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox name5;
+        protected global::System.Web.UI.WebControls.Label d2;
         
         /// <summary>
-        /// ad5 control.
+        /// Label27 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ad5;
+        protected global::System.Web.UI.WebControls.Label Label27;
         
         /// <summary>
-        /// age5 control.
+        /// Label13 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox age5;
+        protected global::System.Web.UI.WebControls.Label Label13;
         
         /// <summary>
-        /// name6 control.
+        /// tm5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox name6;
+        protected global::System.Web.UI.WebControls.Label tm5;
         
         /// <summary>
-        /// ad6 control.
+        /// Label15 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ad6;
+        protected global::System.Web.UI.WebControls.Label Label15;
         
         /// <summary>
-        /// age6 control.
+        /// tm6 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox age6;
+        protected global::System.Web.UI.WebControls.Label tm6;
         
         /// <summary>
-        /// name7 control.
+        /// venue3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox name7;
+        protected global::System.Web.UI.WebControls.Label venue3;
         
         /// <summary>
-        /// ad7 control.
+        /// d3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ad7;
+        protected global::System.Web.UI.WebControls.Label d3;
         
         /// <summary>
-        /// age7 control.
+        /// Label28 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox age7;
+        protected global::System.Web.UI.WebControls.Label Label28;
         
         /// <summary>
-        /// name8 control.
+        /// Label19 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox name8;
+        protected global::System.Web.UI.WebControls.Label Label19;
         
         /// <summary>
-        /// ad8 control.
+        /// tm7 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ad8;
+        protected global::System.Web.UI.WebControls.Label tm7;
         
         /// <summary>
-        /// age8 control.
+        /// Label21 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox age8;
+        protected global::System.Web.UI.WebControls.Label Label21;
         
         /// <summary>
-        /// name9 control.
+        /// tm8 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox name9;
+        protected global::System.Web.UI.WebControls.Label tm8;
         
         /// <summary>
-        /// ad9 control.
+        /// venue4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ad9;
+        protected global::System.Web.UI.WebControls.Label venue4;
         
         /// <summary>
-        /// age9 control.
+        /// d4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox age9;
-        
-        /// <summary>
-        /// name10 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox name10;
-        
-        /// <summary>
-        /// ad10 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ad10;
-        
-        /// <summary>
-        /// age10 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox age10;
-        
-        /// <summary>
-        /// name11 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox name11;
-        
-        /// <summary>
-        /// ad11 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ad11;
-        
-        /// <summary>
-        /// age11 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox age11;
+        protected global::System.Web.UI.WebControls.Label d4;
     }
 }

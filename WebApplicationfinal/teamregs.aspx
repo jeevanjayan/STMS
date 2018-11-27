@@ -34,6 +34,18 @@
         {
             height: 678px;
         }
+        .logout
+        {
+            position: fixed;
+    top: 11px;
+    right: 11px;
+    border-radius: 5px;
+    padding: 9px;
+    font-size: 16px;
+    background: green;
+    color: White;
+    cursor: pointer
+            }
     </style>
     <style>
     }
@@ -10122,10 +10134,10 @@ ul.spb-social2{
 						 </li>
                          <li>
                            
-                        <a href="About.aspx">About Us</a></li>
+                        <a href="#">About Us</a></li>
                    
                           <li>
-                           <a id="HyperLink2" href="Default.aspx#fixer-098">Fixture</a>
+                           <a id="HyperLink2" href="#">Fixture</a>
                           
                          
                           </li>
@@ -10144,27 +10156,17 @@ ul.spb-social2{
 					<ul>
                          <li >
                             <a  id="A1">Tournament</a>
-                            <ul class="children">
-							  <li><a href="trmntreg.aspx">Tournament registration</a></li>
-							  
-							  <li><a href="teamregs.aspx
-                              ">Team Detail</a></li>
-							</ul>
+                            
                     
                           </li>
 						<li>
 							<a href="#">Team &amp; Player</a>
-							<ul class="children">
-							 <li><a href="teamregs.aspx
-                              ">Team Registration</a></li>
-							  <li><a href="player-detail.html">Player detail</a></li>
-							  <li><a href="team-detail.html">Team Detail</a></li>
-							</ul>
+							
                           </li>
                           
 			 
                           <li class="last">
-                              <a href="Contact.aspx">contact</a> 
+                              <a >contact</a> 
                           </li>
 					</ul>
 				</div>
@@ -10184,16 +10186,12 @@ ul.spb-social2{
                       <!-- Collect the nav links, forms, and other content for toggling -->
                       <div class="collapse navbar-collapse" id="navbar-collapse">
                         <ul class="nav navbar-nav">
-                           <li><a href="index-2.html">Home</a> 
+                           <li><a href="default.html">Home</a> 
 						   </li>
-						 <li><a href="team-info.html">About Us</a></li>
+						 <li><a href="#">About Us</a></li>
                         
 							<a href="#">Team &amp; Player</a>
-							<ul class="children">
-							  <li><a href="player-list.html">Players</a></li>
-							  <li><a href="player-detail.html">Player detail</a></li>
-							  <li><a href="team-detail.html">Team Detail</a></li>
-							</ul>
+							
 						  
 						 
                           <li class="last"><a href="#">contact Us</a>
@@ -10208,7 +10206,10 @@ ul.spb-social2{
         <div class="container">
 <div class="row">
 <div class="col-sm-12">
+
 <form id="form1" runat="server">
+<asp:Button ID="Button2" runat="server" class="logout"  Text="Logout" 
+        onclick="Button2_Click" />
     <asp:Panel ID="Panel1" runat="server" BorderStyle="none" 
         
         
@@ -10241,6 +10242,7 @@ ul.spb-social2{
         <asp:ListItem>ECE</asp:ListItem>
         <asp:ListItem>EEE</asp:ListItem>
         <asp:ListItem>ME</asp:ListItem>
+        <asp:ListItem>CIVIL</asp:ListItem>
         <asp:ListItem>BARCH</asp:ListItem>
         <asp:ListItem>MCA</asp:ListItem>
         <asp:ListItem>MTECH</asp:ListItem>

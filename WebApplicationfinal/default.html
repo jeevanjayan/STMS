@@ -30,15 +30,25 @@
         .logout
         {
             position: fixed;
-    top: 11px;
-    right: 11px;
-    
+    z-index: 1000;
+    border: 1.3px solid white;
+    bottom: 293px;
+    /* margin: auto; */
+    right: 670px;
     border-radius: 5px;
+    font-size: 30px;
     padding: 9px;
-    font-size: 16px;
-    background: green;
-    color: White;
-    cursor: pointer
+    font-size: 21px;
+    background: transparent;
+    color: #287a00;
+    cursor: pointer;
+            }
+            .logout:hover{
+
+                color: white;
+                background: #009c00;
+                border: 1.3px solid transparent;
+                transition:0.75s;
             }
             .listt
         {
@@ -10156,128 +10166,92 @@ ul.spb-social2{
 
 </head>
 <body>
-        <header id="mainheader" class="kode-header-absolute">
+    <div class="logout">
+<a style="color:white;"href="login.aspx">Login</a>
 
-                <!--// TopBaar //-->
-                  <div class="kode-topbar">
-                  <div class="container">
-                      <div class="row">
-                        <div class="col-md-6 kode_bg_white">
-                            <div class="bx-wrapper" style="max-width: 100%;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 30px;"><ul class="top_slider_bxslider" style="width: 515%; position: relative; transition-duration: 0s; transform: translate3d(-910px, 0px, 0px);"><li style="float: left; list-style: none; position: relative; width: 455px;" class="bx-clone"><span class="kode-barinfo"><strong>Latest News : </strong> Welcome visitor you can Login or Create an Account</span></li>
-                                <li style="float: left; list-style: none; position: relative; width: 455px;"><span class="kode-barinfo"><strong>Latest News : </strong> Lorem ipsum dolor sit amet, cons ecte tuer adipiscing elit,</span></li>
-                                <li style="float: left; list-style: none; position: relative; width: 455px;"><span class="kode-barinfo"><strong>Latest News : </strong> Lorem ipsum dolor sit amet, cons ecte tuer adipiscing elit,</span></li>
-                                <li style="float: left; list-style: none; position: relative; width: 455px;"><span class="kode-barinfo"><strong>Latest News : </strong> Welcome visitor you can Login or Create an Account</span></li>
-                            <li style="float: left; list-style: none; position: relative; width: 455px;" class="bx-clone"><span class="kode-barinfo"><strong>Latest News : </strong> Lorem ipsum dolor sit amet, cons ecte tuer adipiscing elit,</span></li></ul></div><div class="bx-controls bx-has-controls-direction"><div class="bx-controls-direction"><a class="bx-prev" href=""></a><a class="bx-next" href=""></a></div></div></div>
-                        </div>
-                        <div class="col-md-6">
-                          <ul class="kode-userinfo">
-                            
-                            
-                            <li><a href="Login.aspx"><i class="fa fa-sign-in"></i> Login</a></li>
-                            <li><a href="trmntreg.aspx"><i class="fa fa-user-plus"></i> Register</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                <!--// TopBaar //-->
-                
-                <div class="header-8">
-                    <div class="container">
-                        <!--NAVIGATION START-->
-                        <div class="kode-navigation pull-left">
-                            <ul>
-                                 <li> 
-                                     <a href="Default.aspx">Home</a> 
-                                 </li>
-                                 <li>
-                                   
-                                <a href="About.aspx">About Us</a></li>
-                           
-                                  <li>
-                                   <a id="HyperLink2" href="Default.aspx#fixer-098">Fixture</a>
-                                  
-                                 
-                                  </li>
-                                   
-                                    
-                            </ul>
-                        </div>
-                        <!--NAVIGATION END--> 
-                        <!--LOGO START-->	
-                        <div class="logo">
-                            <a href="" class="logo"><img src="Styles/images/logo.png" style=" width: auto; height: 60px;     margin-left: 3rem; " alt=""></a>
-                        </div>
-                        <!--LOGO END-->	
-                        <!--NAVIGATION START-->
-                        <div class="kode-navigation">
-                            <ul>
-                                    <li >
-                                            <a href="Tournament.aspx" id="A1">Tournament</a>
-                                            <ul class="children">
-                                              <li><a href="trmntreg.aspx">Register</a></li>
-                                              
-                                              <li><a href="team-detail.html">Tournament Detail</a></li>
-                                            </ul>
-                                    
-                                          </li>
-                            
-                                  
-                                <li>
-                                    <a href="#">Team &amp; Player</a>
-                                    <ul class="children">
-                                      <li><a href="player-list.html">Players</a></li>
-                                      <li><a href="player-detail.html">Player detail</a></li>
-                                      <li><a href="team-detail.html">Team Detail</a></li>
-                                    </ul>
-                                  </li>
-                                  
+    </div>
+            
+    
+    <div class="header-8">
+        <div class="container">
+            <!--NAVIGATION START-->
+            <div class="kode-navigation pull-left">
+                <ul>
+                     <li> 
+                         <a href="default.html">Home</a>
+                     </li>
+                     <li>
+                       
+                    <a href="#">About Us</a></li>
+               
+                      <li>
+                       <a id="HyperLink2" href="#">Fixture</a>
+                      
                      
-                                  <li class="last">
-                                      <a href="Contact.aspx">contact</a> 
-                                  </li>
-                            </ul>
-                        </div>
-                        <!--NAVIGATION END-->  
-                         <nav class="navbar navbar-default">
-                            
-                              <!-- Brand and toggle get grouped for better mobile display -->
-                              <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                                  <span class="sr-only">Toggle navigation</span>
-                                  <span class="icon-bar"></span>
-                                  <span class="icon-bar"></span>
-                                  <span class="icon-bar"></span>
-                                </button>
-                              </div>
-        
-                              <!-- Collect the nav links, forms, and other content for toggling -->
-                              <div class="collapse navbar-collapse" id="navbar-collapse">
-                                <ul class="nav navbar-nav">
-                                   <li><a href="index-2.html">Home</a> 
-                                   </li>
-                                 <li><a href="team-info.html">About Us</a></li>
-                                
-                                    <a href="#">Team &amp; Player</a>
-                                    <ul class="children">
-                                      <li><a href="player-list.html">Players</a></li>
-                                      <li><a href="player-detail.html">Player detail</a></li>
-                                      <li><a href="team-detail.html">Team Detail</a></li>
-                                    </ul>
-                                  
-                                 
-                                  <li class="last"><a href="#">contact Us</a>
-                                     
-                                  </li>
-                                </ul>
-                              </div><!-- /.navbar-collapse -->
-        
-                          </nav>
-                    </div>
-                </div>
-              </header>
+                      </li>
+                       
+                        
+                </ul>
+            </div>
+            <!--NAVIGATION END--> 
+            <!--LOGO START-->	
+            <div class="logo">
+                    
+                <a href="" class="logo"><img src="Styles/images/logo.png" style=" width: auto; height: 60px;     margin-left: 3rem; " alt=""></a>
+           </div>
+            <!--LOGO END-->	
+            <!--NAVIGATION START-->
+            <div class="kode-navigation">
+                <ul>
+                    <li> 
+                            <a href="../trmntreg.aspx">Tournament</a>
+                    </li>
+                    <li >
+                        <a  href="teamregs.aspx">Team &amp; Player</a>
+                        
+                      </li>
+                      
+         
+                      <li class="last">
+                          <a href="teamregs.aspx" >contact</a> 
+                      </li>
+                </ul>
+            </div>
+            <!--NAVIGATION END-->  
+             <nav class="navbar navbar-default">
+                
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                  </div>
+
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                       <li><a href="default.html">Home</a> 
+                       </li>
+                     <li><a href="#">About Us</a></li>
+                    
+                        <a href="#">Team &amp; Player</a>
+                        
+                      
+                     
+                      <li class="last"><a href="#">contact Us</a>
+                         
+                      </li>
+                    </ul>
+                  </div><!-- /.navbar-collapse -->
+
+              </nav>
+        </div>
+    </div>
               <div class="main">
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <div id="myCarousel" class="carouel slide" data-ride="carousel">
                             <!-- Indicators -->
                             <ol class="carousel-indicators">
                               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
